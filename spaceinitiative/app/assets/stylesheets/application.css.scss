@@ -1,0 +1,91 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+@import 'lib/constants';
+@import 'vendor/rem';
+
+.hidden {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0
+}
+
+// layout
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: 100%;
+}
+
+body {
+  font-family: 'Open Sans', 'Helvetica', 'Arial';
+  @include rem('font-size', 16px);
+  @include rem('line-height', 24px);
+}
+
+#site {
+  min-height: 100%;
+}
+
+#content {
+  overflow: auto;
+}
+
+.contentPane {
+  position: relative;
+}
+
+.pane {
+  margin: 0 auto;
+  @include rem('padding', 24px 48px);
+  @include rem('max-width', 960px);
+}
+
+// sticky footer Opera fixes (lol CSS)
+body:before {
+  content: '';
+  height: 100%;
+  float: left;
+  width: 0;
+  margin-top: -32767px;/* negate effect of float*/
+}
+
+// styling
+
+.sectionHeading {
+  max-width: 100%;
+  @include rem('padding', 12px 24px);
+  text-align: center;
+  color: $cardinalRed;
+  background: $sectionBackgroundColor;
+  border-width: 1px 0;
+  border-style: solid;
+  border-color: $separatorColor;
+}
+
+a:hover {
+  color: $linkHoverColor;
+}
+
+// misc
+#githubBanner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+}

@@ -1,0 +1,23 @@
+// nav styles for front page, which is exceptional due to the image header.
+@import '../vendor/rem';
+
+#hdrNav {
+  @include rem('padding', 24px 0);
+}
+
+#hdrNavContainer {
+  $banner: '/assets/banner/spacex-banner-1920.jpg';
+  background-image: url($banner);
+  background-position: bottom;
+}
+
+#hdrNavShadow {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#hdrNavContainerIndex {
+}
+
+#hdrNavShadowIndex {
+  background-color: rgba(0, 0, 0, 0.4);
+}

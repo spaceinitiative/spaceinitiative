@@ -1,0 +1,12 @@
+@import '../vendor/rem';
+
+.navList {
+  margin: 0;
+  @include rem('padding', 0 48px);
+  list-style-type: none;
+  text-align: center;
+
+  li {
+    display: inline;
+  }
+}

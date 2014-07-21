@@ -1,0 +1,12 @@
+@import '../vendor/rem';
+
+.ajaxLoader {
+  $spinner: '/ajax-loader.gif';
+  display: block;
+  background-image: url($spinner);
+  background-size: contain;
+  @include rem('width', 16px);
+  @include rem('height', 16px);
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,22 @@
+@import 'constants';
+@import '../vendor/rem';
+
+#titlebar {
+  background: $cardinalRed;
+  overflow: hidden;
+  color: white;
+  @include rem('padding', 16px 24px);
+}
+
+#logo {
+  float: left;
+  display: block;
+  @include rem('height', 28px);
+  @include rem('margin-top', 6px);
+}
+
+#stanfordSeal {
+  display: block;
+  @include rem('height', 40px);
+  float: right;
+}

@@ -1,0 +1,5 @@
+.pageNav
+  %ul.pageNavList
+    - sections.each do |section|
+      %li.pageNavElem
+        %a{href: "##{section[1]}"}= section[0]

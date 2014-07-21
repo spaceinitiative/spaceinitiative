@@ -1,0 +1,10 @@
+= render partial: 'header'
+- sections = [['News', 'newsPane'], ['Events', 'eventsPane']]
+= render partial: 'page_nav', locals: {sections: sections}
+.contentPane
+  #newsPane
+    %h1.sectionHeading News
+    #news.pane
+  #eventsPane
+    %h1.sectionHeading Upcoming events
+    #events.pane

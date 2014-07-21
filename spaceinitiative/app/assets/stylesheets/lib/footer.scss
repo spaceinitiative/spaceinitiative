@@ -1,0 +1,27 @@
+@import 'constants';
+@import '../vendor/rem';
+
+#footer {
+  position: relative;
+  width: 100%;
+  clear: both;
+
+  background: $cardinalRed;
+  color: white;
+  @include rem('font-size', 12px);
+}
+
+#ftrNav {
+  @include rem('padding', 8px 0);
+}
+
+.ftrlink {
+  text-decoration: none;
+  color: white;
+}
+
+.ftrElem {
+  @include rem('padding', 0 12px);
+}
+
+// NOTE: nav styles for footer are in nav.scss.

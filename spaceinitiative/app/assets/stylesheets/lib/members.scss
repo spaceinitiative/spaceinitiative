@@ -1,0 +1,84 @@
+@import 'constants';
+@import 'vendor/rem';
+
+.member_cards {
+  text-align: center;
+}
+
+.member_card {
+  cursor: pointer;
+  cursor: hand;
+  display: inline-block;
+  @include rem('padding', 12px);
+  transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -webkit-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  text-align: center;
+  @include rem('width', 200px);
+
+  &:hover {
+    background-color: $cardinalRed;
+    color: #fff;
+  }
+}
+
+.member_card_clicked {
+  background-color: $cardinalRed;
+  color: white;
+  cursor: default;
+  @include rem('margin', 16px);
+}
+
+.full_member_card {
+  display: inline-block;
+  vertical-align: text-top;
+}
+
+.full_member_card_clicked {
+  background-color: $memberBackgroundColor;
+  border: 1px $memberBorderColor solid;
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+  @include rem('padding', 16px);
+  @include rem('max-width', 600px);
+}
+
+.member_card_bio {
+  display: inline-block;
+  float: right;
+  overflow: hidden;
+  text-align: left;
+}
+
+.member_card_close_button {
+  color: $coolGrey;
+  cursor: pointer;
+  cursor: hand;
+  float: right;
+  font-weight: 600;
+  text-align: right;
+
+  &:hover {
+    color: #000;
+  }
+}
+
+.member_card_thumb {
+  @include rem('width', 100px);
+  @include rem('height', 100px);
+  @include rem('border-radius', 50px);
+  max-height: 200px;
+  max-width: 200px;
+}
+
+.member_card_name {
+  font-weight: 600;
+}
+
+.member_card_name,
+.member_card_title {
+  clear: both;
+  display: block;
+}

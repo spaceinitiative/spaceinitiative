@@ -1,0 +1,11 @@
+!!!
+%html
+  = render partial: 'layouts/head'
+  %body
+    #site
+      = render partial: 'layouts/titlebar'
+      - if current_page?(controller: 'pages', action: 'home')
+        = render partial: 'shared/nav'
+      #content= yield
+    = render partial: 'layouts/footer'
+    = render partial: 'layouts/js'

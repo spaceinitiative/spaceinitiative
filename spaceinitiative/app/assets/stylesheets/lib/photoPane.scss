@@ -1,0 +1,19 @@
+@import '../vendor/rem';
+
+.photoPane {
+  background-size: cover;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.photoPaneShadow {
+  background-color: rgba(0, 0, 0, 0.5);
+  @include rem('padding', 128px);
+}
+
+.photoPaneText {
+  @include rem('max-width', 800px);
+  margin: auto;
+}

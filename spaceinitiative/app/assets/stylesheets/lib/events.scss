@@ -1,0 +1,32 @@
+@import 'constants';
+@import '../vendor/rem';
+
+.eventList {
+  list-style: none;
+}
+
+.eventElem {
+  border-bottom: 1px solid $separatorColor;
+  @include rem('padding', 12px 16px);
+}
+
+.eventDate {
+  font-style: italic;
+  @include rem('font-size', 12px);
+  font-size: .75em;
+  width: 100%;
+}
+
+.eventTitleLink {
+  text-decoration: none;
+}
+
+#eventsAll {
+  @include rem('padding', 24px);
+  padding: 1.5em;
+  text-align: right;
+}
+
+#eventsAllLink {
+  @include rem('font-size', 20px);
+}

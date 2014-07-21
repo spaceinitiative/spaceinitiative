@@ -1,0 +1,12 @@
+- index ||= false
+%div{ id: index ? 'hdrNavContainerIndex' : 'hdrNavContainer' }
+  %div{ id: index ? 'hdrNavShadowIndex' : 'hdrNavShadow' }
+    %ul#hdrNav.navList
+      %li.hdrElem
+        %a.hdrLink.navLink{href: '/about'} About
+      %li.hdrElem
+        %a.hdrLink.navLink{href: '/discuss'} Discuss
+      %li.hdrElem
+        %a.hdrLink.navLink{href: '/projects'} Projects
+      %li.hdrElem
+        %a.hdrLink.navLink{href: '/join'} Join

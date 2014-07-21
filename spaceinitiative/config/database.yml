@@ -1,0 +1,24 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: d96lnq9f80s52l
+  host: ec2-54-83-204-85.compute-1.amazonaws.com
+  port: 5432
+  username: ntkzvlvgumbfpz
+  password: 4g-vrf4wxE9BAjYrGvS50mGQrD
+  pool: 5
+
+test:
+  adapter: sqlite3
+  database: db/test.sqlite3
+  encoding: unicode
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: <%= ENV['DB_NAME'] %>
+  host: <%= ENV['DB_HOST'] %>
+  port: 5432
+  username: <%= ENV['DB_USER'] %>
+  password: <%= ENV['DB_PASS'] %>
+  pool: 5

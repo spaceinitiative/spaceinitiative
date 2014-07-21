@@ -1,0 +1,45 @@
+@import 'constants';
+@import '../vendor/rem';
+
+#news {
+}
+
+.newsList {
+  list-style: none;
+}
+
+.newsElem {
+  border-bottom: 1px solid $separatorColor;
+  @include rem('padding', 12px 16px);
+}
+
+.newsElem:first-child {
+  padding-top: 0;
+
+  .newsTitle {
+    padding-top: 0;
+  }
+}
+
+.newsBody {
+  ul, ol {
+    @include rem('padding-left', 16px);
+    @include rem('margin', 16px);
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.newsDate {
+  font-style: italic;
+  @include rem('font-size', 12px);
+  width: 100%;
+}
+
+.newsPhoto {
+  @include rem('padding', 24px);
+  display: block;
+  margin: 0 auto;
+}

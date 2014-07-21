@@ -1,0 +1,79 @@
+- sections = [['Who we are', 'about'], ['Team', 'team'], ['Mission', 'mission']]
+= render partial: 'page_nav', locals: {sections: sections}
+.contentPane
+  %h1.sectionHeading#about Who we are
+  .pane
+    :markdown
+      SSI is the center of student activities involving space exploration and
+      space entrepreneurship at Stanford. We believe our future in space is
+      being reinvented by private companies and will be more democratized,
+      open, and unbounded than ever.
+
+      We want the Stanford community to gain the knowledge, experience,
+      network, and resources to guide that future.
+
+  - paneText = 'Join us in shaping space exploration and turning our '
+  - paneText << 'dreams into reality!'
+  - paneHref = '/join'
+  - paneBg = '/assets/lecture.jpg'
+  = render partial: 'photo_pane', locals: { text: paneText,
+                                  href: paneHref,
+                                  bg: paneBg }
+  %h1.sectionHeading#team Team
+  .pane#member_cards
+  %h1.sectionHeading#mission Our Mission
+  .pane
+    :markdown
+      Our mission is to change the space culture at Stanford by cultivating
+      space entrepreneurship and strengthening the Stanford space community.
+
+      ## Rationale
+
+      The docking of SpaceX's Dragon capsule was the start of a new
+      age for spaceflight- one where private companies play a pivotal role.
+      With access to one of the top Aerospace engineering programs in the
+      country, NASA Ames just down the street, alumni working in the top
+      aerospace companies across the world, the space corridor with companies
+      like Blue Origin, Moon Express, SpaceX, and Masten growing not too far
+      away and expertise in almost every other discipline from business to
+      chemistry to computer science to public policy and other fields of
+      engineering, Stanford students are the best placed to go out and make a
+      difference. So the purpose of the Student Spaceflight Initiative is to
+      help people at this campus realize this and foster the creation of the
+      teams and ideas that will go out and help revolutionize this field even
+      more.
+
+      ## What we do
+
+      There is a huge interest in space at Stanford but it lacks direction
+      because people either aren't aware of what is going on or don't see how
+      they can be a part of it- this is what we are trying to change.
+
+      We believe that promoting space entrepreneurship requires two parallel
+      goals: getting people excited about space and giving people what they
+      need to turn their ideas into reality. By generating excitement and
+      showing people that they can be involved in aerospace regardless of their
+      background or experience, we foster the development of ideas, which in
+      turn creates more excitement. We hope to build a positive feedback cycle
+      that will return Stanford to being a leader in the space community.
+
+      ## Our goals
+
+      1. We are generating a dialogue between students, alumni, and faculty of
+      all backgrounds at Stanford and the wider space community. We do it
+      through events—speakers, networking sessions, and workshops—that allow
+      anyone to learn about what others are working on and see how they can get
+      involved themselves.
+
+      2. We foster ideas among the Stanford community and help people take
+      those ideas forward. Our thinktank is a forum for people to talk about
+      their vision for space and discuss current problems. Our startup evenings
+      and days are created to allow teams to explore turning their ideas into
+      companies on the spot. Finally, our mentorship and funding program is
+      designed to help students develop their ideas—whether that means making
+      prototypes or finding their first investors.
+
+      3. We coordinate student led, hands on projects to allow students at
+      every level to develop the skills they need to work in aerospace.
+
+      ## [Join us!](/act)
